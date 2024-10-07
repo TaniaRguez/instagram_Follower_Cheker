@@ -1,3 +1,5 @@
+the explanation in Spanish is at the end
+
 # Instagram Non-Followers Checker
 
 This Python script allows you to log into your Instagram account and check which users you follow but do not follow you back. The script uses the `Instaloader` library to retrieve your followers and followees securely, without exposing your credentials.
@@ -44,7 +46,8 @@ Other Common Issues
   - Session Expiration: The script does not store your session by default. You may need to log in again if your session expires.
 
 -----------------------------------
-** Privacy Notice
+
+# Privacy Notice
 This script was created with user privacy in mind. It:
   - Does not store or log your Instagram credentials.
   - Uses Instagram's official mechanisms to log in securely.
@@ -52,7 +55,64 @@ This script was created with user privacy in mind. It:
   - You can verify the source code to ensure that your credentials remain safe.
 
 
----------------------------
 
-# Contributing
-Feel free to submit issues or pull requests to improve the script. Contributions are always welcome!**
+--------------------------------------------------------------------
+
+ESPAÑOL:
+# Lista de usuarios que no te siguen
+Este script en Python te permite iniciar sesión en tu cuenta de Instagram y comprobar qué usuarios sigues pero no te siguen de vuelta. El script utiliza la librería Instaloader para obtener de forma segura la lista de tus seguidores y seguidos, sin exponer tus credenciales.
+
+## Características
+- Inicio de sesión seguro utilizando Instaloader.
+- Recupera una lista de los usuarios que sigues y de los que te siguen.
+- Muestra la lista de usuarios que no te siguen de vuelta.
+- Diseñado para mantener la privacidad del usuario al no almacenar credenciales ni datos de sesión innecesariamente.
+
+
+## Requisitos Previos
+Para ejecutar este script, necesitas tener:
+- Python 3.6 o superior instalado.
+- La librería `Instaloader` instalada. Puedes instalarla mediante pip:
+    ```bash
+  pip install instaloader
+
+
+--------------------------------------------------------------------
+
+# ¿Cómo Usarlo?
+1. Clona este repositorio o descarga el script
+  git clone https://github.com/yourusername/instagram-non-followers-checker.git
+2. Reemplaza your_username y your_password en el script con tus credenciales de Instagram.
+3. Ejecuta el script:
+  python instagram_non_followers_checker.py
+
+El script imprimirá una lista de usuarios que sigues pero que no te siguen de vuelta.
+
+--------------------------------------------------------------------
+
+# Manejo de Errores
+Si te encuentras con un error que luce así:
+  LoginException: Login: Checkpoint required. Point your browser to /challenge/action/... - follow the instructions, then retry.
+
+Es debido a un mecanismo de seguridad de Instagram. Para resolverlo:
+1. Copia la URL proporcionada en el mensaje de error y pégala en tu navegador "www.instagram.com/(pegar aquí)".
+2. Sigue las instrucciones de Instagram para verificar tu inicio de sesión (esto puede incluir confirmar tu identidad a través de un correo electrónico o teléfono).
+3. Una vez que hayas completado la verificación, ejecuta el script nuevamente.
+
+--------------------------------------------------------------------
+
+# Otros Problemas Comunes
+- Limitación de Tasa (Rate Limiting): Instagram puede limitar la cantidad de intentos de inicio de sesión o solicitudes. Si esto sucede, espera unos minutos antes de intentarlo nuevamente.
+- Credenciales Inválidas: Revisa tu nombre de usuario y contraseña si recibes un error de inicio de sesión.
+- Expiración de Sesión: El script no almacena tu sesión por defecto. Es posible que necesites iniciar sesión nuevamente si tu sesión expira.
+
+--------------------------------------------------------------------
+
+# Aviso de Privacidad
+Este script fue creado pensando en la privacidad del usuario. No:
+- Almacena o registra tus credenciales de Instagram.
+- Utiliza mecanismos oficiales de Instagram para iniciar sesión de forma segura.
+- Comparte tus datos con terceros.
+- Puedes verificar el código fuente para asegurarte de que tus credenciales permanecen seguras.
+
+
