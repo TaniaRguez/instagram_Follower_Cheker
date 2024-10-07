@@ -22,7 +22,7 @@ To run this script, you need to have:
 
 # How to Use?
 1. Clone this repository or download the script.
-   git clone https://github.com/yourusername/instagram-non-followers-checker.git
+   git clone https://github.com/TaniaRguez/instagram-non-followers-checker.git
 2. Replace your_username and your_password in the script with your Instagram credentials.
 3. Run the script:
     python instagram_non_followers_checker.py
@@ -81,7 +81,7 @@ Para ejecutar este script, necesitas tener:
 
 # ¿Cómo Usarlo?
 1. Clona este repositorio o descarga el script
-  git clone https://github.com/yourusername/instagram-non-followers-checker.git
+  git clone https://github.com/TaniaRguez/instagram-non-followers-checker.git
 2. Reemplaza your_username y your_password en el script con tus credenciales de Instagram.
 3. Ejecuta el script:
   python instagram_non_followers_checker.py
